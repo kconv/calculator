@@ -1,0 +1,77 @@
+:root {
+	--main-background-color: #242330;
+	--main-color: #6a697b;
+	font-family: "Raleway", "Roboto";
+	background-color: var(--main-background-color);
+	color: var(--main-color);
+
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+}
+
+#main {
+	display: flex;
+	justify-content: center;
+}
+
+.w3-container {
+	background-color: #6a697b;
+	border: 2px #2b2a40 solid;
+	border-radius: 25px;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 280px;
+}
+
+#display {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 20px;
+	background-color: #6b8174;
+	width: 90%;
+	height: 50px;
+	margin: 10px 0px 40px;
+	font-size: 40px;
+	font-family: "DSEG7 Modern";
+	color: #242330;
+}
+
+#button-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 50px);
+	grid-gap: 20px;
+}
+
+.btn {
+	background-color: #c5c6bf;
+	width: 55px;
+	height: 55px;
+	border: 2px #2b2a40 solid;
+	border-radius: 15px;
+	font-size: 28px;
+}
+
+.btn:hover {
+	background-color: #9f9fa8;
+}
+
+#clear {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+#equals {
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+#clear, #equals {
+	width: 125px;
+}

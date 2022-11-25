@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		<!-- <h1 id="title">Calculator</h1> -->
+	</header>
+	<div id="main">
+		<div class="w3-container">
+			<div id="display">0</div>
+			<div id="button-grid">
+				<button class="btn" onclick="storeDigit(7)" id="seven">7</button>
+				<button class="btn" onclick="storeDigit(8)" id="eight">8</button>
+				<button class="btn" onclick="storeDigit(9)" id="nine">9</button>
+				<button class="btn" onclick="storeOperator('d')" id="divide">/</button>
+				<button class="btn" onclick="storeDigit(4)" id="four">4</button>
+				<button class="btn" onclick="storeDigit(5)" id="five">5</button>
+				<button class="btn" onclick="storeDigit(6)" id="six">6</button>
+				<button class="btn" onclick="storeOperator('m')" id="multiply">×</button>
+				<button class="btn" onclick="storeDigit(1)" id="one">1</button>
+				<button class="btn" onclick="storeDigit(2)" id="two">2</button>
+				<button class="btn" onclick="storeDigit(3)" id="three">3</button>
+				<button class="btn" onclick="storeOperator('a')" id="add">+</button>
+				<button class="btn" onclick="negateValue()" id="negative">+/-</button>
+				<button class="btn" onclick="storeDigit(0)" id="zero">0</button>
+				<button class="btn" onclick="storeDigit(Number('.'))" id="decimal">.</button>
+				<button class="btn" onclick="storeOperator('s')" id="subtract">-</button>
+				<button class="btn" onclick="clearScreen()" id="clear">CE</button>
+				<button class="btn" onclick="operate(getOperator(), getX(), getY())" id="equals">=</button>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
