@@ -1,5 +1,5 @@
 :root {
-	--main-background-color: #242330;
+	--main-background-color: #8f9db8;
 	--main-color: #6a697b;
 	font-family: "Raleway", "Roboto";
 	background-color: var(--main-background-color);
@@ -29,6 +29,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	width: 280px;
+	box-shadow: #242330 0px 0px 10px;
 }
 
 #display {
@@ -43,6 +44,7 @@ header {
 	font-size: 40px;
 	font-family: "DSEG7 Modern";
 	color: #242330;
+	box-shadow: inset 0px 0px 10px #242330;
 }
 
 #button-grid {
@@ -52,16 +54,22 @@ header {
 }
 
 .btn {
-	background-color: #c5c6bf;
+	background-color: #afbcc9;
 	width: 55px;
 	height: 55px;
-	border: 2px #2b2a40 solid;
+	border: 2px #2b2a40 ridge;
 	border-radius: 15px;
 	font-size: 28px;
+	box-shadow: #242330 0px 0px 10px;
 }
 
 .btn:hover {
-	background-color: #9f9fa8;
+	background-color: #94a8bc;
+}
+
+.btn:active {
+	background-color: #6f8090;
+	box-shadow: none;
 }
 
 #clear {

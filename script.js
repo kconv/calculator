@@ -1,5 +1,3 @@
-
-
 const display = document.getElementById('display');
 const buttons = document.querySelectorAll('.btn')
 
@@ -52,6 +50,7 @@ function operate(operator, x, y) {
 			break;
 	}
 	clearScreen();
+	console.log(result);
 	display.innerHTML = result;
 }
 
@@ -112,12 +111,3 @@ function negateValue() {
 		display.innerHTML = vals.y;
 	}
 }
-
-storeDigit(4);
-storeDigit(6);
-storeDigit(8);
-storeOperator('a');
-storeDigit(3);
-storeDigit(2);
-
-operate(getOperator(), getX(), getY());

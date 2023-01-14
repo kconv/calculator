@@ -1,0 +1,9 @@
+h1 {
+	font-family: 'Courier New', Courier, monospace;
+	color: brown;
+}
+div {
+	border: 2px rebeccapurple solid;
+	width: 10px;
+	height: 10px;
+}
